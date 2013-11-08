@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<title>VWorkApp Helper -- Giving your customers what they want</title>
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/vworkapp.css" rel="stylesheet" />
+	<script type="text/javascript" src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyB31mjMaXNA33VUKwCndXANCkbgULTyY2k&sensor=false"></script>
+</head>
+<body onload="getLocation()">
+	<header>
+		<h1>VWorkApp Helper</h1>
+		<h3>Helping small businesses retain and grow their customers.</h3>
+	</header>
+	<div class="col-md-6"> 
+		<h4>Reserve your limo today!</h4>
+		<form id="form">
+			<p style="margin:10px">First we need your information.</p>
+			<div id="personalInformation">
+				<!--label for="firstName">First Name:  </label-->
+				<input type="text" id="firstName" placeholder="First Name" autofocus />
+				<!--label for="lastName">Last Name:  </label-->
+				<input type="text" id="lastName" placeholder="Last Name" /> </br>
+				 <!--label for="phone">Phone Number:  </label-->
+				<input type="text" id="phone" placeholder="Phone Number" />
+				<!--label for="email">Email Address:  </label-->
+				<input type="email" id="email" placeholder="Email Address" />
+			</div>
+			<div>
+				<p>Now we need your starting address.</p>
+				<!--label for="startingAddress">Starting Address:  </label-->
+				<input type="text" id="startingAddress" placeholder="Address"/>
+				<input type="text" id="startingCity" placeholder="City" />
+			</div>
+			<div>
+				<p>Next we need your destination address. </p>
+				<label for="destinationSame">Same as starting address </label>
+				<input id="destinationSame" type="checkbox" /> </br>
+				<!--label for="endingAddress">Ending Address (Optional):  </label-->
+				<input type="text" id="endingAddress" placeholder="Address" />
+				<input type="text" id="endingCity" placeholder="City" />
+			</div>
+			<div id="times">
+				<p>What day are you requesting a limo?</p>
+				<input type="date" />
+				<p>What time do you want to be picked up?</p>
+				<input type="time" value="12:00" />
+				<p>How many people are in your party?</p>
+				<select id = "num-passenger">
+	               <option value = "1">1</option>
+	               <option value = "2">2</option>
+	               <option value = "3">3</option>
+	               <option value = "4">4</option>
+	               <option value = "5">5</option>
+	               <option value = "6">6</option>
+	               <option value = "7">7</option>
+	               <option value = "8">8</option>
+	               <option value = "9">9</option>
+	               <option value = "10">10</option>
+	               <option value = "11">11</option>
+	               <option value = "12">12</option>
+	             </select>				
+				<p>What type of vehicle do you want to rent?</p>
+				<select id = "vehicle-type">
+	               <option value = "sedan">Sedan</option>
+	               <option value = "limo">Limo</option>
+	               <option value = "suv">SUV</option>
+	               <option value = "bus">Bus</option>
+	             </select>				
+			</div>
+			<input style="margin:10px" type="submit" value="submit" />
+		</form>
+
+
+	</div>
+	<div class="col-md-6"> 
+		<div id="map">
+
+		</div>
+	</div>
+	<footer>
+	</footer>
+	<script type="text/javascript" src="js/jqueryv1.10.2.js"></script>
+    <script type="text/javascript" src="js/vworkapp.js"></script>
+</body>
+</html>

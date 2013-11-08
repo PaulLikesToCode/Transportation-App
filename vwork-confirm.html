@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vWork</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvvj_OUxrZtPCzFU-qpqZjK-bOGOW6wKs&sensor=false&libraries=places&RankBy.DISTANCE"></script>
+ 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>	
+ 	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
+ 	<link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css"/>	
+</head>
+<body>
+	<div class="container breadcrumb">
+		<h4 class="text-primary text-center">Thanks for booking with our app!</h2>
+		<h5 class="text-primary">Pick-up Time: {{ pickup_time }}</h5>
+		<h5 class="text-primary">Driver's Name: {{ driver_name }}</h5>
+		<h5 class="text-primary">Driver's Phone Number: {{ driver_phone }}</h5>
+		<h5 class="text-primary">Have an issue? Call us at 555-555-5555.</h5>
+		<!--p class="text-success">Your pickup time is {{ pickup_time }}. Your driver's name is {{ driver_name}}. His/Her phone number is {{driver_phone}}.<p-->
+		<!--div class="map-container">
+			<div id="map-canvas"></div>
+		</div-->	
+	</div>
+	<footer id="confirm-footer">
+		<input type="submit" id="cancel-button" name="submit" class="btn btn-primary btn-block text-center" value="Cancel This Ride" />		
+	</footer>
+	<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vWork</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvvj_OUxrZtPCzFU-qpqZjK-bOGOW6wKs&sensor=false&libraries=places&RankBy.DISTANCE"></script>
+ 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>	
+ 	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
+ 	<link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css"/>	
+</head>
+<body>
+	<div class="container breadcrumb">
+	<!--header class="pageheader navbar-fixed-top">
+		<h1>Ride Me</h1>
+	</header-->
+		<h2 class="text-primary text-center">SF Best Ride</h2>
+		<form method="POST" id="user-request-form" role="form" enctype="multipart/form-data">
+			<div class="form-group col-xs-12">
+				<input type="text" id="name" class="form-control" name="pname" placeholder="Name">
+			</div>
+			<div class="form-group col-xs-12">
+				<input type="text" id="phone" class="form-control" name="phone" placeholder="Phone">
+			</div>
+			<div class="form-group col-xs-12">
+				<input type="text" id="pickup-loc" class="form-control" name="pickup-loc" placeholder="Pickup Location">
+			</div>
+			<div class="form-group col-xs-12">
+				<input type="text" id="dropoff-loc" class="form-control" name="dropoff-loc" placeholder="Drop Off Location">
+			</div>
+			<div class="form-group">
+				<div class="form-group col-xs-6 ">
+					<input type="date" id="" name="pickup-date" class="form-control" placeholder="pickup date">
+				</div>	
+				<div class="form-group col-xs-6">	
+					<input type="time" id="" name="pickup-time" class="form-control" value="12:00">
+				</div>	
+			</div>
+			<div class="form-group">
+				<div class="form-group col-xs-6">	
+					<select id = "num-passenger" class="selectpicker show-tick" data-width="100%" required>
+					   <option value="" default selected># of Passengers</option>
+		               <option value = "1">1</option>
+		               <option value = "2">2</option>
+		               <option value = "3">3</option>
+		               <option value = "4">4</option>
+		               <option value = "5">5</option>
+		               <option value = "6">6</option>
+		               <option value = "7">7</option>
+		               <option value = "8">8</option>
+		               <option value = "9">9</option>
+		               <option value = "10">10</option>
+		               <option value = "11">11</option>
+		               <option value = "12">12</option>
+		             </select>
+		     	</div>
+		     	<div class="form-group col-xs-6">        				
+					<select id = "vehicle-type" class="selectpicker show-tick" data-width="100%" required>
+						<option value="" default selected>Vehicle Type</option>
+		               <option value = "sedan" data-subtext="Seats 3">Sedan</option>
+		               <option value = "suv" data-subtext="Seats 4">SUV</option>
+		               <option value = "limo" data-subtext="Seats 10">Limo</option>
+		               <option value = "bus" data-subtext="Seats 30">Bus</option>
+		             </select>
+	            </div> 
+	        </div>    				
+			<input type="submit" id="" name="submit" class="btn btn-primary btn-block" value="Get Ride" />
+		</form> 
+		<div class="map-container">
+			<div id="map-canvas"></div>
+		</div>	
+		<footer>	
+			<input id="showMap" class="btn btn-primary btn-block" type="button" value="Show Map" />
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+	<script type="text/javascript" src="js/appNew.js"></script>
+</body>
+</html>
